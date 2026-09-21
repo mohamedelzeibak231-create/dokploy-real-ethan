@@ -15,5 +15,4 @@ VOLUME ["/app/data"]
 ENV DB_PATH=/app/data/skullix.db
 
 CMD ["python", "main.py"]
-ENV 
 ENV DISCORD_TOKEN=DISCORD_TOKEN=MTUzMjU0NjcwNjUwMjE4OTA5Nw.GMaxoH.-T9Wx64HfwlqMJr7gJW6NNjMYz96QRq6KjNXKk
