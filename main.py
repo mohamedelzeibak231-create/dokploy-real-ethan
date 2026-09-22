@@ -1045,4 +1045,10 @@ bot.tree.add_command(level_group)
 if __name__ == "__main__":
     if not TOKEN:
         raise SystemExit("Set the DISCORD_TOKEN environment variable before running.")
+
+    # ---- TEMPORARY DEBUG: remove once the login issue is confirmed fixed ----
+    _preview = f"{TOKEN[:6]}...{TOKEN[-6:]}" if len(TOKEN) > 12 else "(too short to preview)"
+    print(f"[DEBUG] TOKEN length={len(TOKEN)} preview={_preview} repr={TOKEN!r}"[:200])
+    # --------------------------------------------------------------------
+
     bot.run(TOKEN)
